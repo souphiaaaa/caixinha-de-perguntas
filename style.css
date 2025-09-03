@@ -4,6 +4,13 @@ body {
 
 }
 footer {
-    background-color: aliceblue;
-    color:black
+    background-color: rgb(170, 170, 170);
+    color:black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    text-align: center;
+    font: 0.6rem;
 }
