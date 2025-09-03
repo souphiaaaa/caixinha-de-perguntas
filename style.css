@@ -1,11 +1,13 @@
 body {
     background-color: black;
-    color:aliceblue
-
+    color:aliceblue;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 footer {
-    background-color: rgb(170, 170, 170);
-    color:black;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -13,4 +15,5 @@ footer {
 footer p {
     text-align: center;
     font: 0.6rem;
+    margin-top: 0.5rem;
 }
