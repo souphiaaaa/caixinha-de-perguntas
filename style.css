@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: url('img/bg-desktop.webp')
     color:aliceblue;
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
@@ -40,4 +40,9 @@ footer p {
 }
 .cartao_conteudo_resposta{
     text-align: center;
+}
+:root {
+    --text-color: #DBE4EF;
+    --card-front-color: #144480;
+    --card-back-color: #00F4BF;
 }
