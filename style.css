@@ -1,6 +1,5 @@
 body {
-    background-color: url('img/bg-desktop.webp')
-    color:aliceblue;
+    background: url('img/bg-desktop.webp');
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
@@ -23,20 +22,29 @@ footer p {
 }
 .cartão{
     margin: 1rem 1rem;
-    background-color: rgb(44, 36, 36);
+    background-color: aqua
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
 }
 .cartão_conteudo{
     text-align: center;
-    background-color: rgb(51, 0, 0);
+    background-color:var(--card-front-color);
     height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
 }
 .cartão_conteudo h3{
-    background-color: brown;
+    color:var(--card-front-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius: 0.6rem;
+    font-size: 1vw;
+    backface-visibility: hidden;
+
 }
 .cartao_conteudo_resposta{
     text-align: center;
@@ -45,4 +53,35 @@ footer p {
     --text-color: #DBE4EF;
     --card-front-color: #144480;
     --card-back-color: #00F4BF;
+}
+
+.cartão_conteudo_pergunta p{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.cartão_conteudo_resposta p{
+    color: var(--card-back-color);
+    font-weight: 700;
+}
+
+.cartão:hover .cartão_conteudo {
+    transform: rotateY(180deg);
+
+}
+
+.cartão_conteudo_pergunta, .cartão_conteudo_resposta{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width:  100%;
+}
+
+.cartão_conteudo_resposta{
+    transform: rotateY(180deg);
+}
+.cartão_conteudo p{
+    margin: 1rem;
+    padding: 2rem;
+    margin-top: 4rem;
 }
