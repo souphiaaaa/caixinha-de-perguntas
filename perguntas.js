@@ -4,7 +4,7 @@ criaCartao(
     resposta,
 )
 criaCartao(
-    'Dead By Daylight',
+    'Dead By Daylight - Pergunta 1:',
     'O que é tunelar?',
     'É quando o killer foca em uma só pessoa em vez de perseguir os outros players.'
 )
