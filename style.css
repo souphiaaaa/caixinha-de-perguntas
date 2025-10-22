@@ -3,6 +3,7 @@ body {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
+
 }
 footer {
     background-color: rgb(0, 0, 0);
@@ -52,6 +53,8 @@ footer p {
 }
 .cartao_conteudo_resposta{
     text-align: center;
+    display: none;
+
 }
 :root {
     --text-color: #ffffff;
@@ -71,6 +74,7 @@ footer p {
 
 .cartão:hover .cartão_conteudo {
     transform: rotateY(180deg);
+    display:block;
 
 }
 
