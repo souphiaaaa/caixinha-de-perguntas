@@ -2,14 +2,16 @@ body {
     background-color: #38000e;
     font-family: "Libre Baskerville", serif;
 }
+
 footer {
     background-color: rgb(0, 0, 0);
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 2rem;
 }
+
 footer p {
     text-align: center;
     font: 0.6rem;
@@ -23,23 +25,26 @@ footer p {
     padding: 4rem;
     gap: 3rem;
 }
-.cartão{
+
+.cartão {
     margin: 1rem 1rem;
     background-color: rgb(0, 0, 0);
     height: 75rem;
     flex-grow: 1 0 calc(100% - 1rem);
     flex-basis: calc(33% - 6rem);
 }
-.cartão_conteudo{
+
+.cartão_conteudo {
     text-align: center;
-    background-color:#830016;
+    background-color: #830016;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
-   
+
 }
-.cartão_conteudo h3{
-    color:var(--text-color);
+
+.cartão_conteudo h3 {
+    color: var(--text-color);
     border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
@@ -50,20 +55,21 @@ footer p {
     backface-visibility: hidden;
 
 }
+
 :root {
     --text-color: #ffffff;
     --card-front-color: #830016;
     --card-back-color: #38000e;
 }
 
-.cartão_conteudo_pergunta p{
+.cartão_conteudo_pergunta p {
     color: var(--text-color);
     font-weight: 500;
     text-align: center;
     align-items: center;
 }
 
-.cartão_conteudo_resposta p{
+.cartão_conteudo_resposta p {
     color: var(--card-back-color);
     font-weight: 700;
     margin-top: 4rem;
@@ -76,30 +82,34 @@ footer p {
     transform: rotateY(180deg);
 
 }
-.cartão_conteudo_pergunta, .cartão_conteudo_resposta{
+
+.cartão_conteudo_pergunta,
+.cartão_conteudo_resposta {
     backface-visibility: hidden;
     position: absolute;
     height: 100%;
-    width:  100%;
+    width: 100%;
     box-sizing: border-box;
     text-align: center;
     align-items: center;
 }
 
-.cartão_conteudo_resposta{
-    transform:  rotateY(180deg);
+.cartão_conteudo_resposta {
+    transform: rotateY(180deg);
     background-color: #830016;
     border: 4px solid var(--card-back-color);
     text-align: center;
 }
-.cartão_conteudo p{
+
+.cartão_conteudo p {
     margin: 1rem;
     padding: 2rem;
     margin-top: 4rem;
     font-size: 2.8vw;
 }
- @media (max-width:560px ) {
-    body{
+
+@media (max-width:560px) {
+    body {
         background: url('img/bg-mobile.webp');
     }
- }
+}
