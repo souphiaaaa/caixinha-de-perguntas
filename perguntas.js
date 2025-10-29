@@ -11,7 +11,7 @@ criaCartao(
 criaCartao(
     'Pergunta 2:',
     'O que são perks?',
-    'São habilidades, de sobrevivente e killer, que podem ajudar em certos atributos na partida. exemplo: Deja Vu - de sobrevivente - Mostra os 3 geradores que estão mais proximos um do outro, e da 6% de bonus de velocidade ao fazer os geradores marcados. exemplo: Lightborn - de killer - As auras dos sobreviventes que tentam te cegar são mostradas por 10 segundos. Da imunidade contra ser cegado.',
+    'São habilidades, de sobrevivente e killer, que podem ajudar em certos atributos na partida. exemplo: Deja Vu - de sobrevivente - Mostra os 3 geradores que estão mais proximos um do outro, e da 6% de bonus de velocidade ao fazer os geradores marcados.',
 )
 criaCartao(
     'Pergunta 3:',
