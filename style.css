@@ -1,9 +1,6 @@
 body {
     background-color: #38000e;
     font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-
 }
 footer {
     background-color: rgb(0, 0, 0);
@@ -11,6 +8,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 2rem;
 }
 footer p {
     text-align: center;
@@ -28,13 +26,13 @@ footer p {
 .cartão{
     margin: 1rem 1rem;
     background-color: rgb(0, 0, 0);
-    height: 20rem;
+    height: 75rem;
     flex-grow: 1 0 calc(100% - 1rem);
     flex-basis: calc(33% - 6rem);
 }
 .cartão_conteudo{
     text-align: center;
-    background-color:var(--card-front-color);
+    background-color:#830016;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
@@ -52,12 +50,6 @@ footer p {
     backface-visibility: hidden;
 
 }
-.cartao_conteudo_resposta{
-    text-align: center;
-    transform: rotateY(180deg);
-    opacity: 0; 
-    transition: opacity 300ms ease-in-out;
-}
 :root {
     --text-color: #ffffff;
     --card-front-color: #830016;
@@ -67,43 +59,44 @@ footer p {
 .cartão_conteudo_pergunta p{
     color: var(--text-color);
     font-weight: 500;
+    text-align: center;
+    align-items: center;
 }
 
 .cartão_conteudo_resposta p{
     color: var(--card-back-color);
     font-weight: 700;
-    opacity: 0; 
-    transition: opacity 300ms ease-in-out;
+    margin-top: 4rem;
+    font-size: 2.8vw;
+    text-align: center;
+    align-items: center;
 }
 
 .cartão:hover .cartão_conteudo {
     transform: rotateY(180deg);
 
 }
-.cartão:hover .cartão_conteudo_resposta {
-    transform: rotateY(180deg);
-opacity: 1;
-}
-
 .cartão_conteudo_pergunta, .cartão_conteudo_resposta{
     backface-visibility: hidden;
     position: absolute;
     height: 100%;
     width:  100%;
     box-sizing: border-box;
+    text-align: center;
+    align-items: center;
 }
 
 .cartão_conteudo_resposta{
+    transform:  rotateY(180deg);
     background-color: #830016;
     border: 4px solid var(--card-back-color);
-    opacity: 0; 
-    transition: opacity 300ms ease-in-out;
+    text-align: center;
 }
 .cartão_conteudo p{
     margin: 1rem;
     padding: 2rem;
     margin-top: 4rem;
-    font-size: 3.8vw;
+    font-size: 2.8vw;
 }
  @media (max-width:560px ) {
     body{
